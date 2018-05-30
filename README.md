@@ -1,1 +1,1 @@
-# thristov-360portfolio.github.io
+# Paleo.github.io
