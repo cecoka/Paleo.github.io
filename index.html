@@ -10,13 +10,12 @@
     <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
     <script src="components/set-image.js"></script>
-    <script>setTimeout(function () {
-        if(window.location.hash != '#r') {
-          window.location.hash = 'r';
-          window.location.reload(1);
-        } 
-      }, 500);
-    </script> <!-- Refresh after 0.5 sec -->
+   <script> window.onload = function() {
+       if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+     }</script> <!-- Reload page -->
   </head>
   <body>
     <a-scene>
