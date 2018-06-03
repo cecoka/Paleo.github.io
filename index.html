@@ -10,6 +10,13 @@
     <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
     <script src="components/set-image.js"></script>
+    <script>setTimeout(function () {
+        if(window.location.hash != '#r') {
+          window.location.hash = 'r';
+          window.location.reload(1);
+        } 
+      }, 500);
+    </script> <!-- Refresh after 0.5 sec -->
   </head>
   <body>
     <a-scene>
@@ -19,8 +26,6 @@
         <img id="Paleo2-thumb" crossorigin="anonymous" src="Paleo2-Thumb.jpg">
         <img id="Paleo2" crossorigin="anonymous" src="Prep360.jpg">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-        
-        
 
         <!-- Image link template to be reused. -->
         <script id="link" type="text/html">
