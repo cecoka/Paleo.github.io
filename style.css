@@ -1,0 +1,61 @@
+/* === Desktop === */
+@media only screen and (min-width: 1024px){
+    #banner{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100vw;  
+        height: 100vh;
+        border-bottom: 1px solid #B3811A;
+    }
+    
+    #links{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 125px;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .setVRimg{
+        display: block;
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        margin: 0 1vw;
+        background: black;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 2px solid #111E2B;
+        z-index: 1;
+        opacity: 0.75;
+        filter: grayscale(50%);
+    }
+    
+    .setVRimg:focus{
+        border: 4px solid #B3811A;
+        outline-width: 0;
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+    
+    .setVRimg:nth-child(1) {
+        background-image: url('https://cdn.glitch.com/739117dc-2369-4861-8ea8-79905b2ae1b9%2FBIC_FI.jpg?1527596432613')}
+    .setVRimg:nth-child(2) {
+        background-image: url('https://cdn.glitch.com/739117dc-2369-4861-8ea8-79905b2ae1b9%2FTH_FI.jpg?1527596430955')} 
+}
+
+/* === 2K+ Wide Desktop  ===*/ 
+@media only screen and (min-width: 2600px){
+    #links{
+        height: 200px;
+    }
+    
+    .setVRimg{
+        transform: scale(2);
+        margin: 0 2vw;
+    }
+}
