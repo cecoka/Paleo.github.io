@@ -43,7 +43,7 @@
     }
     
     .setVRimg:nth-child(1) {
-        background-image: url('Paleo1-Thumb.jpg')}
+        background-image: url('Paleo1-Thumb.jpg')} 
     .setVRimg:nth-child(2) {
         background-image: url('Paleo2-Thumb.jpg')} 
 }
